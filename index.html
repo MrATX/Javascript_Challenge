@@ -1,49 +1,64 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+<head></head>
   <meta charset="utf-8">
   <title>UFO Sightings!</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="UFO-level-1/static/css/style.css">
+  <link rel="stylesheet" href="UFO-level-2/static/css/style.css">
 </head>
 
-<body>
+<body style="background-color:lavender;">
     <div class="container-flexible">
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
-                <img src="UFO-level-1/static/images/kangandkodos.jpg" width="100%">
+                <img src="UFO-level-2/static/images/kangandkodos.jpg" width="100%">
                 <h1 id="maintitle">UFO Sightings!</h1>
+                <center>Use the boxes below to filter the table of sightings</center>
                 <hr>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-6">
-                <form>
-                    <div class="form-group">
-                    <ul class="list-group" id="filters">
-                        <li class="filter list-group-item">
-                        <label for="date">Filter by Date</label>
-                        <input class="form-control" id="datetime" type="text" placeholder="ex. 1/1/2010">
-                        </li>
-                    </ul>
-                    </div>
-                </form>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3"></div>
-                        <div class="col-md-6" style="border:dotted;margin-bottom:25px;">
-                            <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
-                            <button id="reset-btn" type="button" class="btn btn-default">Reset Table</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="row" style="margin-bottom: 25px;">
+          <div class="col-md-1"></div>
+          <div class="col-md-2">
+              <center>Date</center>
+              <input class="form-control" id="datefil" type="text" placeholder="ex. 1/9/2010">
+          </div>
+          <div class="col-md-2">
+            <center>City</center>
+            <input class="form-control" id="cityfil" type="text" placeholder="ex. seattle">
+          </div>
+          <div class="col-md-2">
+            <center>State</center>
+            <input class="form-control" id="statefil" type="text" placeholder="ex. wa">
+          </div>
+          <div class="col-md-2">
+            <center>Country</center>
+            <input class="form-control" id="countryfil" type="text" placeholder="ex. us">
+          </div>
+          <div class="col-md-2">
+            <center>Shape</center>
+            <input class="form-control" id="shapefil" type="text" placeholder="ex. cylinder">
+          </div>
         </div>
         <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-3">
+            <button id="reset-btn" type="button" class="btn btn-default">Reset Table</button>
+          </div>
+          <div class="col-md-3">
+            <button id="filreset-btn" type="button" class="btn btn-default">Reset Filters</button>
+          </div>
+        </div>
+        <div class="row" style="margin-top:50px;">
             <div id="table-area" class="">
                 <table id="ufo-table" class="table table-striped">
                   <thead>
@@ -63,8 +78,8 @@
         </div>
     </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
-  <script src="UFO-level-1/static/js/data.js"></script>
-  <script src="UFO-level-1/static/js/app.js"></script>
+  <script src="UFO-level-2/static/js/data.js"></script>
+  <script src="UFO-level-2/static/js/app.js"></script>
 </body>
 
 </html>
