@@ -13,3 +13,19 @@
     font-size: larger;
     color:white;
 }
+
+#reset-btn{
+    background-color: darkgoldenrod;
+    width:100%;
+    font-size:larger;
+    color:white;
+    margin-top:20px;
+}
+
+#filreset-btn{
+    background-color: maroon;
+    width:100%;
+    font-size:larger;
+    color:white;
+    margin-top:20px;
+}
