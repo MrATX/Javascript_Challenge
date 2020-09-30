@@ -33,17 +33,19 @@ const runFilter = () => {
     console.log(inputValue);
 
     // Assign filter to data & check output
-    let filteredData = tableData.filter(sighting => sighting.datetime === inputValue);
-    console.log(filteredData);
+
 
     // Clear table and loop to assign filtered values
     tbody.html("");
-    filteredData.forEach((sighting) => {
-        let row = tbody.append("tr");
-        Object.values(sighting).forEach(value => {
-            let cell = row.append("td");
-            cell.text(value);
-        })
+    data.forEach((sighting) => {
+        if ((sighting.datetime == inputValue)
+         && (sighting.city == "seattle")) {
+            let row = tbody.append("tr");
+            Object.values(sighting).forEach(value => {
+                let cell = row.append("td");
+                cell.text(value);
+            })
+        }
     })
 }
 

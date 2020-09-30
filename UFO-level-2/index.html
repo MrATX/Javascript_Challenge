@@ -16,20 +16,40 @@
             <div class="col-md-6">
                 <img src="static/images/kangandkodos.jpg" width="100%">
                 <h1 id="maintitle">UFO Sightings!</h1>
+                <center>Use the boxes below to filter the table of sightings</center>
                 <hr>
             </div>
         </div>
+        <div class="row" style="margin-bottom: 25px;">
+          <div class="col-md-1"></div>
+          <div class="col-md-2">
+              <center>Date</center>
+              <input class="form-control" id="datetime" type="text" placeholder="ex. 1/9/2010">
+          </div>
+          <div class="col-md-2">
+            <center>City</center>
+            <input class="form-control" id="cityfil" type="text" placeholder="ex. seattle">
+          </div>
+          <div class="col-md-2">
+            <center>State</center>
+            <input class="form-control" id="statefil" type="text" placeholder="ex. wa">
+          </div>
+          <div class="col-md-2">
+            <center>Country</center>
+            <input class="form-control" id="countryfil" type="text" placeholder="ex. us">
+          </div>
+          <div class="col-md-2">
+            <center>Shape</center>
+            <input class="form-control" id="shapefil" type="text" placeholder="ex. cylinder">
+          </div>
+        </div>
         <div class="row">
-            <div class="col-md-2">
-                <center>Date</center>
-                <input class="form-control" id="datetime" type="text" placeholder="ex. 1/1/2010">
-                <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button> 
-            </div>
-            <div class="col-md-2"></div>
-            <div class="col-md-2"></div>
-            <div class="col-md-2"></div>
-            <div class="col-md-2"></div>
-        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+          </div>
+        </div>
+        <div class="row" style="margin-top:50px;">
             <div id="table-area" class="">
                 <table id="ufo-table" class="table table-striped">
                   <thead>
